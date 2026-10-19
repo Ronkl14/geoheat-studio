@@ -2,6 +2,10 @@
 
 A browser-based geospatial data visualization MVP, evolved from an interactive rabies mapping prototype. User-uploaded data stays in the browser; only explicit place searches and map tile requests access external services.
 
+## Application preview
+
+![GeoHeat Studio application with the synthetic sample dataset](public/geoheat-studio-preview.png)
+
 ## Getting started
 
 Requirements: Node.js 20.19+ or 22.12+ and npm.

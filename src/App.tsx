@@ -19,7 +19,7 @@ const demo = Papa.parse<RawRow>(demoText, {
 }).data;
 export default function App() {
   const [rows, setRows] = useState<RawRow[]>(demo);
-  const [fileName, setFileName] = useState('Global research demo.csv');
+  const [fileName, setFileName] = useState('Synthetic city dataset.csv');
   const [columns, setColumns] = useState<string[]>(Object.keys(demo[0]));
   const [mapping, setMapping] = useState<ColumnMapping>(guessMapping(Object.keys(demo[0])));
   const [selectedTab, setSelectedTab] = useState<'data' | 'mapping' | 'locations' | 'layers'>(
@@ -72,7 +72,7 @@ export default function App() {
     setRows(demo);
     setColumns(Object.keys(demo[0]));
     setMapping(guessMapping(Object.keys(demo[0])));
-    setFileName('Global research demo.csv');
+    setFileName('Synthetic city dataset.csv');
     setOverrides({});
     setError('');
     setCategory('All');
