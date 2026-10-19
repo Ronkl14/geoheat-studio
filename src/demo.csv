@@ -1,0 +1,11 @@
+city,country,latitude,longitude,cases,category,year
+London,United Kingdom,51.5074,-0.1278,18,Research A,2023
+Paris,France,48.8566,2.3522,12,Research A,2023
+Berlin,Germany,52.5200,13.4050,8,Research B,2024
+Madrid,Spain,40.4168,-3.7038,15,Research B,2024
+Rome,Italy,41.9028,12.4964,11,Research A,2024
+Amsterdam,Netherlands,52.3676,4.9041,6,Research B,2023
+Lisbon,Portugal,38.7223,-9.1393,10,Research A,2024
+Vienna,Austria,48.2082,16.3738,14,Research B,2023
+Prague,Czechia,50.0755,14.4378,9,Research A,2023
+Copenhagen,Denmark,55.6761,12.5683,7,Research B,2024
