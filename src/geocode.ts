@@ -1,5 +1,14 @@
 export type GeocodeResult = { display_name: string; lat: string; lon: string; type?: string };
 // Nominatim public service is interactive/manual-only. Do not perform bulk or automatic calls.
+let lastSearchAt = 0;
+
+export function isSearchRateLimitReady(): boolean {
+  const now = Date.now();
+  if (now - lastSearchAt < 1100) return false;
+  lastSearchAt = now;
+  return true;
+}
+
 export async function searchPlace(
   place: string,
   country: string,

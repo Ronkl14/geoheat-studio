@@ -52,7 +52,8 @@ Public OpenStreetMap Nominatim is intended for modest user-triggered interactive
 - `src/hooks/useMappedData.ts`: derived mapped rows, unique filters and unresolved place groups.
 - `src/geocode.ts`: explicit, user-triggered Nominatim searches.
 - `src/components/MapView.tsx`: Leaflet tiles, markers and heat layers, with cleanup and safe text popups.
-- `src/App.tsx`: application state and workspace UI; `src/styles.css` contains the visual design.
+- `src/components/WorkspaceSidebar.tsx`: import, column mapping, place resolution and layer controls.
+- `src/App.tsx`: application state and workspace composition; `src/styles.css` contains the visual design.
 - `tests/`: Node-native tests for parsing, coordinate validation, mapping, filters and CSV export.
 
 This is a new derivative project. The originally provided `rabies_heatmap_interactive.html` remains unchanged. Its embedded rabies observations are not included in this generic MVP, avoiding accidental redistribution of study data.
