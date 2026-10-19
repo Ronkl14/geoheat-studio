@@ -6,6 +6,10 @@ A browser-based geospatial data visualization MVP, evolved from an interactive r
 
 ![GeoHeat Studio application with the synthetic sample dataset](public/geoheat-studio-preview.png)
 
+## Technologies
+
+React 19, TypeScript, Vite, Leaflet with `leaflet.heat`, Papa Parse for CSV, and `read-excel-file` for XLSX. Quality tooling uses ESLint, Prettier, TypeScript, and Node's built-in test runner.
+
 ## Getting started
 
 Requirements: Node.js 20.19+ or 22.12+ and npm.
