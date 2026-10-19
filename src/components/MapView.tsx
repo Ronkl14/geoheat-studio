@@ -46,9 +46,12 @@ export default function MapView({ points, heat, markers, palette, radius, blur, 
     tile.current?.remove();
     const layer =
       basemap === 'dark'
-        ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-        : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
-    const attribution = '&copy; OpenStreetMap contributors &copy; CARTO';
+        ? 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
+        : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const attribution =
+      basemap === 'dark'
+        ? '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, tiles by <a href="https://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a>'
+        : '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>';
     tile.current = L.tileLayer(layer, { attribution, maxZoom: 19 }).addTo(currentMap);
     return () => {
       tile.current?.remove();

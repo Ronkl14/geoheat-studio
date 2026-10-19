@@ -478,8 +478,8 @@ export default function App() {
                     value={basemap}
                     onChange={(e) => setBasemap(e.target.value as 'dark' | 'light')}
                   >
-                    <option value="dark">Midnight</option>
-                    <option value="light">Light</option>
+                    <option value="dark">Humanitarian</option>
+                    <option value="light">Standard</option>
                   </select>
                 </label>
                 <div className="tip">
